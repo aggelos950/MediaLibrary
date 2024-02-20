@@ -1,0 +1,19 @@
+uuid: ca7bd8e6-f4ac-459c-9bb1-d44c91d76c58
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_video_in_favorites
+field_name: field_video_in_favorites
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

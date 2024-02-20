@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ *
+ * Example on how to alter theme settings form
+ */
+function mytheme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+}
+
+function mytheme_preprocess_page_title(&$variables) {
+  $variables['title'] = t('MediaKeeper');
+}
+
+
+function mytheme_preprocess_links(&$variables){
+  $markup = "Go to Media";
+  $variables['links']['node-readmore']['link']['#title'] = Drupal\Core\Render\Markup::create($markup);
+}
+
+
+function mytheme_form_user_login_form_alter(&$form, FormStateInterface $form_state) {
+  $form['#submit'][] = 'mytheme_redirect';
+}
+
+function mytheme_redirect(&$form, FormStateInterface $form_state){
+  $url = Url::fromRoute('<front>');
+  $form_state->setRedirectUrl($url);
+}
+  
