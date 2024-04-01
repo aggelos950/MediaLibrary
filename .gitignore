@@ -1,0 +1,7 @@
+vendor
+core
+contrib
+files
+/web/sites/default/settings.ddev.php
+/web/libraries
+.ddev

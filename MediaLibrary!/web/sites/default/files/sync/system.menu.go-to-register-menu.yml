@@ -1,8 +1,0 @@
-uuid: f12b0f8d-a28a-4b32-b1ea-287f679a6687
-langcode: en
-status: true
-dependencies: {  }
-id: go-to-register-menu
-label: 'Go To Register Menu'
-description: ''
-locked: false
