@@ -1,0 +1,43 @@
+uuid: 95521b05-1b0a-434c-aac9-f0256a0b0859
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.images.field_image_in_favorites
+    - field.field.node.images.field_img
+    - image.style.thumbnail
+    - node.type.images
+  module:
+    - media
+    - user
+id: node.images.teaser
+targetEntityType: node
+bundle: images
+mode: teaser
+content:
+  field_image_in_favorites:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_img:
+    type: media_thumbnail
+    label: above
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  flag_favorites: true

@@ -1,0 +1,30 @@
+uuid: 2832363f-38b6-4512-8721-283c129252f0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f9282cf6-978f-43e4-86e8-5bcf2d1448fe'
+  module:
+    - block_content
+    - system
+  theme:
+    - mytheme
+id: downloadalllinkblock
+theme: mytheme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: 'block_content:f9282cf6-978f-43e4-86e8-5bcf2d1448fe'
+settings:
+  id: 'block_content:f9282cf6-978f-43e4-86e8-5bcf2d1448fe'
+  label: 'Download All Link Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /favorites

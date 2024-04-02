@@ -1,0 +1,47 @@
+uuid: 8ef9bfab-0951-4eec-8da3-d40520992962
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.audios
+    - node.type.images
+    - node.type.page
+    - node.type.videos
+  module:
+    - contextual
+    - file
+    - flag
+    - node
+    - system
+    - toolbar
+    - tour
+_core:
+  default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
+id: content_editor
+label: 'Content editor'
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'cancel account'
+  - 'create audios content'
+  - 'create images content'
+  - 'create videos content'
+  - 'delete any audios content'
+  - 'delete any images content'
+  - 'delete any videos content'
+  - 'delete article revisions'
+  - 'delete page revisions'
+  - 'edit any audios content'
+  - 'edit any images content'
+  - 'edit any videos content'
+  - 'flag favorites'
+  - 'unflag favorites'
+  - 'view own unpublished content'
+  - 'view the administration theme'
