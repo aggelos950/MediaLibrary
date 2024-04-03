@@ -1,0 +1,8 @@
+uuid: 5bea2728-f9cf-4a6a-9df8-75268334e75c
+langcode: en
+status: true
+dependencies: {  }
+id: registered-user-menu
+label: 'Registered User Menu'
+description: ''
+locked: false

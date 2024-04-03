@@ -1,0 +1,19 @@
+uuid: 63d6f9d1-98e4-4e84-b2e9-5d1fc90ec1c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_in_favorites
+    - node.type.videos
+id: node.videos.field_video_in_favorites
+field_name: field_video_in_favorites
+entity_type: node
+bundle: videos
+label: 'Video in Favorites'
+description: 'Copy paste this text: This media is being added to the favorites. If you want to remove it you have to go to the media page you selected it and uncheck it. The other way is to click the go to media button below and unclick it there and then come back.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

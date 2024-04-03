@@ -1,0 +1,33 @@
+uuid: 73cdc025-ccd2-49b8-82bf-d6bd68949205
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.anonymous-user-menu
+  module:
+    - system
+    - user
+  theme:
+    - mytheme
+id: anonymoususermenu
+theme: mytheme
+region: primary_menu
+weight: -1
+provider: null
+plugin: 'system_menu_block:anonymous-user-menu'
+settings:
+  id: 'system_menu_block:anonymous-user-menu'
+  label: 'Anonymous User Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
