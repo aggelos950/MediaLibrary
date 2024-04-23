@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "017bcd0785f45b75e39e5b933ac12757",
+    "content-hash": "b29dbee57f55c010bf0c09a0c2abace4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2134,54 +2134,6 @@
             "homepage": "https://www.drupal.org/project/flag",
             "support": {
                 "source": "https://git.drupalcode.org/project/flag"
-            }
-        },
-        {
-            "name": "drupal/vfd",
-            "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/vfd.git",
-                "reference": "2.0.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/vfd-2.0.1.zip",
-                "reference": "2.0.1",
-                "shasum": "1935c505cf1b02b1db9c10e818b6604bed64a7b5"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9 || ^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.1",
-                    "datestamp": "1666246250",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "gaurav.kapoor",
-                    "homepage": "https://www.drupal.org/user/3495331"
-                }
-            ],
-            "description": "Download files attached to a view or node in a Zip file.",
-            "homepage": "https://www.drupal.org/project/vfd",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/vfd",
-                "issues": "https://www.drupal.org/project/issues/vfd"
             }
         },
         {

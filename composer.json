@@ -24,7 +24,6 @@
         "drupal/devel": "^5.0",
         "drupal/devel_kint_extras": "^1.0",
         "drupal/flag": "^4.0@beta",
-        "drupal/vfd": "^2.0",
         "drupal/views_slideshow": "^5.0",
         "drush/drush": "^11.6"
     },
